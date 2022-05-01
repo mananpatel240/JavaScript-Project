@@ -18,7 +18,7 @@ var userSchema = new Schema({
 let User; //to be defined on new connection (see initialize)
 module.exports.initialize = () => {
     return new Promise((resolve,reject) => {
-        let db = mongoose.createConnection("mongodb+srv://mspatel45:mspatel45@senecaweb.im7yi.mongodb.net/ProjectDatabase?retryWrites=true&w=majority");
+        let db = mongoose.createConnection("mongodb+srv://mspatel45:mspatel45@senecaweb.im7yi.mongodb.net/projectdatabase?retryWrites=true&w=majority");
         db.on('error', (err) => {
             reject(err);
         })
